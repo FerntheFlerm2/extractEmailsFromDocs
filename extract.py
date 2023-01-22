@@ -8,7 +8,7 @@ import subprocess
 exit_code = subprocess.call('./docToTxt.sh')
 if exit_code != 0:
 	print("ERROR: something went wrong in docToTxt")
-
+	exit(-1)
 
 directory = '~/Desktop/random/momEms/docFiles'
 emailRegex = re.compile(r'[a-zA-Z0-9+._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+')
